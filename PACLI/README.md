@@ -6,14 +6,14 @@ This directory must contain all of the files within the PACLI-Rls-x.x.zip (where
 
 Additionally you will need to create and/or cofigure the logonfile.ini, StationSuspendedTool.ini and Vault.ini for your environment. (see below)
 
-========================================================================================================================================================
+============================================================================================================================
 logonfile.ini:
 - create the logonfile with the account/password you want to use for this tool.
 - the account you use must have the ability to unlock users within CyberArk.
-========================================================================================================================================================
+============================================================================================================================
 
 
-========================================================================================================================================================
+============================================================================================================================
 StationSuspendedTool.ini:
 
 CyberArk Section - [CyberArk]
@@ -31,13 +31,14 @@ CyberArkADSupportGroup - input the Active Directory group that grants Active Dir
 
 Administrative Functions - [AdminFunctions]
 SuperSecretAdminPrefix - input the string (MUST BE ALL UPPERCASE LETTERS and numbers only) that grants access to the DEACTIVATE/ACTIVE button for your environment
-========================================================================================================================================================
+============================================================================================================================
 
 
-========================================================================================================================================================
+============================================================================================================================
 Vault.ini:
 Vault- input the vault name for your environment
 Address- input the vault ip address for your environment
-========================================================================================================================================================
+============================================================================================================================
 
 A sample StationSuspendedTool.ini has been placed in this directory for you.
+
