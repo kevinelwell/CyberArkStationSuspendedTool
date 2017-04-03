@@ -1,1 +1,115 @@
+<html><head><title>CyberArk Station Suspended Tool Documentation</title></head>
+<body>
+    <div id="Tool">
+        <h1 style="font-family:Calibri Light; color:#2e74b5; font-size:large">CyberArk Station Suspended Tool</h1>
+        <div></div>
+		<div style="text-align:left;"><img src="Utility.png" height="500" width="600" hspace="35"></div>
+		</div>
+		
+		    <div id="Summary">
+        <h1 style="font-family:Calibri Light; color:#2e74b5; font-size:large">CyberArk Station Suspended Tool Summary</h1>
+        <div></div>
+        <p>
+            The CyberArk Station Suspended Tool is a utility that provides authorized users the ability to check to see if an account is locked within CyberArk. Typically, the user will report the following error: <strong style="color:#ff0000">Station Suspended for User: XXXXXXXXXX</strong>.
+        </p>
+		<p>
+			If the user's account is locked within CyberArk, the utility has the ability to unlock the account.
+			        <div id="Desc">
+            <span style="font-family:Calibri; font-size:medium">
+                <p><span style="font-family:Calibri; font-size:medium"><span style="font-family:Calibri; font-size:medium">CyberArk Station Suspended Tool has following properties:</p>
+                <ul style="list-style-type:disc; direction:ltr">
+                    <li>
+                        <strong>TEXT AREA</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>Enter the user's ID you want to check in the text area
+                    </li>
+					<li>
+                        <strong>FULL NAME</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>This read-only field will display the user's first and last name
+                    </li>
+					<li>
+                        <strong>NETWORK ID</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>This read-only field will display the user's network ID
+                    </li>
+					<li>
+                        <strong>USER SUSPENDED</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>This read-only field will display the user's suspended status with CyberArk
+                    </li>
+					<li>
+                        <strong>FAILED LOGINS</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>This read-only field will display the number of failed logins to CyberArk
+                    </li>
+					<li>
+                        <strong>SEARCH BUTTON</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>Once a user's ID has been entered into the text area, the <strong>Search </strong>button will become enabled. <strong style="color:#ff0000">(please note: the results are NOT displayed on the form instantly. It may take a few seconds.)</strong>
+                    </li>
+					<li>
+                        <strong>ACTIVATE BUTTON</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>If a user's ID is locked within CyberArk, the <strong>Activate </strong>button will appear and allow you unlock the user's account. <strong style="color:#ff0000">(please note: the results are NOT displayed on the form instantly. It may take a few seconds.)</strong>
+                    </li>
+					<li>
+                        <strong>EXIT BUTTON</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>The <strong>Exit </strong>button is used to exit out of the utility. <strong style="color:#ff0000">(please note: if you clicked on the Help button and the help page is still open, exiting the utility will NOT close the help window)</strong>
+                    </li>
+					<li>
+                        <strong>VAULT COMMUNICATION STATUS</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>Displays green if the utility can ping the CyberArk vault and red if the utility cannot ping the CyberArk vault.
+                    </li>
+					<li>
+                        <strong>ALLOWED SOURCE</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>Displays green if the utility is being executed from an allowed source and red if the utility is <strong style="color:#ff0000">NOT </strong> being executed from an allowed source.
+                    </li>
+					<li>
+                        <strong>ACTIVE DIRECTORY CMDLETS</strong>: <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>Displays green if the utility detects the Active Directory PowerShell CMDlets are present and red if the Active Directory PowerShell CMDlets are <strong style="color:#ff0000">NOT </strong> present.
+                    </li>
+					</ul>	
+						<p>
+							<div style="text-align:left;"><img src="Utility2.png" height="500" width="600"></div>
+						</p>
+                
+        </div>
+		</p>
+		</div>
+		
+    <div id="Usage">
+        <h1 style="font-family:Calibri Light; color:#2e74b5; font-size:large">Usage</h1>
+        <div></div>        
+            To check if a user's account is locked out within CyberArk, simply enter the user's network ID in the <strong>TEXT AREA </strong>of the form. Then click the <strong>SEARCH </strong> button.
+        
+        <div></div>
+        <p>The results of the search will be displayed within the utility. <strong style="color:#ff0000">(please note: the results are NOT displayed on the form instantly. It may take a few seconds.)</strong></p>
+        <div></div>
 
+		
+    <div id="Unlock">
+        <h1 style="font-family:Calibri Light; color:#2e74b5; font-size:large">Unlock User's Account</h1>
+        <div></div>  
+        <p>
+           If the user's account is locked within CyberArk, the <strong>ACTIVATE </strong> button will be displayed. 
+         <div style="text-align:left;"><img src="Utility5.png" height="500" width="600" hspace="35"></div>       
+        </p>
+        <div></div>
+        <p>
+           Click the <strong>ACTIVATE </strong> button to unlock the user's account and reset the number of failed logins to zero (0) within CyberArk.
+           <div style="text-align:left;"><img src="Utility6.png" height="500" width="600" hspace="35"></div> 
+		<p>   
+		   <div style="color:#ff0000"> Note <strong>USER SUSPENDED </strong> is now false and failed logins is now zero (0).</div>
+		</p>   
+        <div></div>
+		<p>
+		Click the <strong> EXIT </strong> button to exit the CyberArk Station Suspended Tool.	
+		</p>
+    </div>
+</body>
+</html>
