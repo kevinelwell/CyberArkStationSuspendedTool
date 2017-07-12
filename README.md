@@ -1,4 +1,4 @@
-# CyberArkStationSuspendedTool
+# CyberArk Station Suspended Tool
 This tool provides a PowerShell GUI to unlock a user's account within CyberArk using the PACLI.
 
 Feedback is welcome.
