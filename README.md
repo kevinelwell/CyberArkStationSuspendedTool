@@ -4,8 +4,10 @@ This tool provides a PowerShell GUI to unlock a user's account within CyberArk u
 
 # TODO
 
-Update documentation
-Create interactive script to walk through setting up this tool for your environment
+Update documentation.
+
+Create interactive script to walk through setting up this tool for your environment.
+
 Create custom connector that will launch this tool from the PSM for a greater level of security.
 
 Feedback is welcome.
